@@ -121,11 +121,17 @@ SP（スマホ）用のスタイル
     display: block;
   }
 
-  /* リンク装飾（白文字＋アンダーライン） */
+  /* リンク装飾（白文字） */
   #nav-sp .menu:link,
   #nav-sp .menu:visited,
   #nav-sp .menu:hover,
   #nav-sp .menu:active {
+    color: #ffffff;
+    text-decoration: none;/* 初期状態で下線なし */
+  }
+
+   /* ホバー時に下線を追加 */
+  #nav-sp .menu:hover {
     color: #ffffff;
     text-decoration: underline;
   }
